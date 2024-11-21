@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Farming System</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="icon" href="c:\Users\shivam verma\OneDrive\Desktop\project\images\th.jpeg" type="image/png">
+</head>
+
+<body>
+  <header>
+    <div class="a">
+      <img class="b" src="c:\Users\shivam verma\OneDrive\Desktop\project\images\logo-512.png" alt="logo-512">
+      <div class="c">
+        <a href="index.html">HOME</a>
+
+        <a href="https://www.bing.com/images/search?q=news+farmers+protest&form=HDRSC3&first=1">NEWS</a>
+        <a href="contect.html">CONTACT</a>
+        <a href="login.html">LOGIN</a>
+      </div>
+      <div class="d">
+        <button onclick="goToNextPage()" style="    font-weight: bold; 
+      font-size: 28px; margin-right: 30px;  "> SELL</button>
+      </div>
+    </div>
+    <script>
+      function goToNextPage() {
+        window.location.href = "location.html";
+      }
+    </script>
+  </header>
+
+  <div class="slider">
+    <div class="image-container">
+      <img src="/images/blob (3).jpeg" class="slide" alt="Slide 1" />
+      <img src="c:\Users\shivam verma\OneDrive\Desktop\project\images\blob (4).jpeg" class="slide" alt="Slide 2" />
+      <img src="c:\Users\shivam verma\OneDrive\Desktop\project\images\blob (2).jpeg" class="slide" alt="Slide 3" />
+    </div>
+    <div class="buttons">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+  </div>
+
+  <script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      let slides = document.getElementsByClassName("slide");
+      let dots = document.getElementsByClassName("dot");
+
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) { slideIndex = 1 }
+
+      for (let i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+
+      setTimeout(showSlides, 3000); // Change image every 3 seconds
+    }
+
+    function currentSlide(n) {
+      slideIndex = n - 1;
+      showSlides();
+    }
+  </script>
+  <div class="gre"><a href="text">BUY AND SELL YOUR AGRICULTURAL PRODUCE ONLINE
+    </a>
+  </div>
+  <div class="container1">
+    <div id="d1" class="box">
+      <h1>Welcome to "Krishi-Market"
+      </h1>
+      <br>
+      <p>Buy and sell your Agric produce online (Buyers meet Farmers) – Sell your produce directly to buyers without
+        middlemen and make more money from your farm produce.
+        It’s evident that India has one of the largest agricultural markets around the world, which is why it becomes
+        important to have a service, which can connect the farmers all over the country. This would help them in
+        maximizing their profits by selling their farm produce at a better price by selling locally or where farmer get
+        maximum price. The service is free for now</p>
+      <div class="goog">
+        <img src="c:\Users\shivam verma\OneDrive\Desktop\project\images\playstore-300x89.png" alt="click">
+      </div>
+    </div>
+    <div id="d2" class="box">
+      <div id="fd"> <img id="a1"
+          src="c:\Users\shivam verma\OneDrive\Desktop\project\images\market-nryac6nb3edhi1bgvg1uo83is8eixdmsva903xxzr0.png"
+          alt="click">
+        <a href="click" class="w">
+          <h1>Sell Agri Produce</h1>
+          <p id="ghf">Sell your agriculture products without any mediator</p>
+
+        </a>
+      </div>
+      <div id="fd">
+        <img id="a1"
+          src="c:\Users\shivam verma\OneDrive\Desktop\project\images\harvest-nryacbci1kjx434n402ziowtr5rczv5gjxifibr0vw.png"
+          alt="click">
+        <a href="click" class="w">
+          <h1>Buy Agri Produce</h1>
+          <p id="ghf">Now Farmers can sell their produce directly to end consumers there are no more mediator.</p>
+
+        </a>
+      </div>
+
+      <div id="fd">
+        <img id="a1"
+          src="c:\Users\shivam verma\OneDrive\Desktop\project\images\responsive-nryaby6rdw1wljnr8ue7js8dfrk803p7u4dmsgajb0.png"
+          alt="click">
+        <a href="click" class="w">
+          <h1>Sell Agri Produce</h1>
+          <p id="ghf">Indias no 1 Marketplace for farmers can buy and sell their agriculture produce.
+          </p>
+
+        </a>
+      </div>
+    </div>
+  </div>
+  <h1 id="has">Buy and Sell Categories</h1>
+  <p id="kgh">Here you can Buy or Sell or Advertise your agriculture produce online</p>
+
+
+  <div class="content">
+    <!-- First row of 6 divs -->
+    <div class="row">
+      <div class="bt">
+        <img id="vf" src="c:\Users\shivam verma\OneDrive\Desktop\project\images\vege.png" alt="click">
+        <h2 id="vx">Vegetables</h2>
+      </div>
+      <div class="bt">
+        <img id="vf" src="c:\Users\shivam verma\OneDrive\Desktop\project\images\fruits.png" alt="click">
+        <h2 id="ko" id="vx">Fruits</h2>
+      </div>
+      <div class="bt">
+        <img id="vf" src="c:\Users\shivam verma\OneDrive\Desktop\project\images\spces.png" alt="click">
+        <h2 id="ko" id="vx">Spices</h2>
+      </div>
+      <div class="bt">
+        <img id="vf" src="c:\Users\shivam verma\OneDrive\Desktop\project\images\flower.png" alt="click">
+        <h2 id="ko" id="vx">Flowers</h2>
+      </div>
+      <div class="bt">
+        <img id="vf" src="c:\Users\shivam verma\OneDrive\Desktop\project\images\cofee.png" alt="click">
+        <h2 class="fd" id="vx">Coffee and Tea</h2>
+      </div>
+      <div class="bt">
+        <img id="vf" src="c:\Users\shivam verma\OneDrive\Desktop\project\images\poultry.png" alt="click">
+        <h2 class="fmd" id="vx">Poultry Products</h2>
+      </div>
+    </div>
+
+    <!-- Second row of 6 divs -->
+    <div class="row">
+
+      <div class="bt">
+        <img id="vf" src="c:\Users\shivam verma\OneDrive\Desktop\project\images\cattle.png" alt="click">
+        <h2 class="fmd" id="vx">Cattle and Sheep</h2>
+      </div>
+      <div class="bt">
+        <img id="vf" src="c:\Users\shivam verma\OneDrive\Desktop\project\images\fish.png" alt="click">
+        <h2 id="ko" id="vx">Fishery</h2>
+      </div>
+      <div class="bt">
+        <img id="vf" src="c:\Users\shivam verma\OneDrive\Desktop\project\images\seeds.png" alt="click">
+        <h2 id="ko" id="vx">Seeds</h2>
+      </div>
+      <div class="bt">
+        <img id="vf" src="c:\Users\shivam verma\OneDrive\Desktop\project\images\manure.png" alt="click">
+        <h2 id="ko" id="vx">Manure</h2>
+      </div>
+      <div class="bt">
+        <img id="vf" src="c:\Users\shivam verma\OneDrive\Desktop\project\images\agri-tools.png" alt="click">
+        <h2 id="ko" id="vx">
+          Agri Tools</h2>
+
+      </div>
+      <div class="bt">
+        <img id="vf" src="c:\Users\shivam verma\OneDrive\Desktop\project\images\fertiliser.png" alt="click">
+        <h2 id="ko" id="vx">
+          Fertilizers</h2>
+
+
+      </div>
+    </div>
+
+    <!-- Third row of 6 divs -->
+    <div class="row">
+      <div class="bt">
+        <img id="vf" src="c:\Users\shivam verma\OneDrive\Desktop\project\images\cotton.png" alt="click">
+        <h2 id="ko" id="vx">Cotton</h2>
+      </div>
+      <div class="bt">
+        <img id="vf" src="c:\Users\shivam verma\OneDrive\Desktop\project\images\home.png" alt="click">
+        <h2 class="fmd" id="vx"> Home Made Products</h2>
+
+
+      </div>
+      <div class="bt">
+
+        <img id="vf" src="c:\Users\shivam verma\OneDrive\Desktop\project\images\nursary.png" alt="click">
+        <h2 class="fmd" id="vx">Nursery Plants</h2>
+
+      </div>
+      <div class="bt">
+        <img id="vf" src="c:\Users\shivam verma\OneDrive\Desktop\project\images\timber.png" alt="click">
+        <h2 class="fmd" id="vx"> Wood and Timber</h2>
+
+      </div>
+      <div class="bt"> <img id="vf" src="c:\Users\shivam verma\OneDrive\Desktop\project\images\land.png" alt="click">
+        <h2 class="fmd" id="vx"> Agriculture Land</h2>
+      </div>
+      <div class="bt"> <img id="vf" src="c:\Users\shivam verma\OneDrive\Desktop\project\images\ceral.png" alt="click">
+        <h2 class="fmd" id="vx"> Any Other</h2>
+
+
+      </div>
+    </div>
+  </div>
+  <script>
+    // Add click event to all divs with the class 'bt'
+    document.querySelectorAll('.bt').forEach(div => {
+      div.addEventListener('click', () => {
+        window.location.href = 'location.html'; // Redirect to location.html
+      });
+    });
+  </script>
+  <div class="gf">
+    <h1>How it Works</h1>
+    <p>Farmers can sell all products through Krishi Market.</p>
+  </div>
+  <div class="as">
+    <div class="vfsa">
+      <img src="c:\Users\shivam verma\OneDrive\Desktop\project\images\bg11.png" alt="img">
+    </div>
+    <div class="dgs">
+      <div class="hgf">
+        <div class="qw">
+          <img src="c:\Users\shivam verma\OneDrive\Desktop\project\images\download.jpeg" alt="How">
+        </div>
+        <div class="ert">
+          <h1>Register Your Account</h1>
+          <p>Farmers need to register their contact details to create an account.</p>
+        </div>
+      </div>
+
+      <div class="hgf">
+        <div class="qw">
+          <img src="c:\Users\shivam verma\OneDrive\Desktop\project\images\download1.png" alt="How">
+        </div>
+        <div class="ert">
+          <h1>Publish Listing</h1>
+          <p>Farmers can sell the products through Krishi Market, need to publish particular produce.</p>
+        </div>
+      </div>
+
+      <div id="qet" class="hgf">
+        <div class="qw">
+          <img id="dfg" src="c:\Users\shivam verma\OneDrive\Desktop\project\images\download2.png" alt="How">
+        </div>
+        <div class="ert">
+          <h1>Waiting for a call</h1>
+          <p>Anybody required particular produce they will contact directly through your available contacts.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <button id="lkj" onclick="i()">REGISTER NOW</button>
+  <script>
+    function i() {
+      window.location.href = "register.html"; // Correct syntax for navigation
+    }
+  </script>
+
+  <div class="fixed">
+
+  </div>
+  <footer>
+    <div class="foot-pannel">
+      Back to Top
+    </div>
+    <div class="foot2">
+      <ul>
+        <P id="f">Recent Posts</P>
+        <a href="text">Download Krishi Market </a>
+        <a href="text">Android mobile</a>
+        <a href="text">Ente krishi Kerala</a>
+
+      </ul>
+      <ul>
+        <P id="f">Site Info</P>
+        <a href="text">former connect</a>
+        <a href="text">on the company</a>
+        <a href="text">Investor Relations</a>
+        <a href="text">with using software</a>
+        <a href="text">Sell products
+
+        </a>
+      </ul>
+      <ul>
+        <P id="f">
+          Contact</P>
+        <a href="text">Carrer</a>
+        <a href="text">KRISHI MARKET ONLINE</a>
+        <a href="text">#36, Mysore, Karnataka
+        </a>
+        <a href="text">info@krishi-market.com</a>
+      </ul>
+      <ul>
+        <P id="f">Get to Know Us</P>
+        <a href="text">Carrer</a>
+        <a href="text">About KRISHI-MARKET</a>
+        <a href="text">Investor Relations</a>
+        <a href="text">FORMER Devices</a>
+        <a href="text">About Service</a>
+      </ul>
+    </div>
+    <div class="f3">
+      <div class="log">
+
+      </div>
+    </div>
+    </div>
+    <div class="f4">
+      <div class="pages">
+        <a href="text"> Conditions of use</a>
+        <a href="text">Privacy Notice</a>
+        <a href="text">Your Ads Privacy Choices</a>
+
+      </div>
+      <div class="copy">
+        Copyright © 2024 KRISHI MARKET ONLINE
+        c 1996-2024,KRISHI-MARKET.com,Inc.or its affiliates
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

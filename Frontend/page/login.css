@@ -1,0 +1,154 @@
+ body{
+    background-image: url('../images/file.jpg');
+  
+ 
+        background-size: cover;           
+        background-position: center center; 
+        background-repeat: no-repeat;   
+        background-attachment: fixed;  
+    
+ }
+#k{
+    height: 150px;
+    width: 150px;
+margin-left: 570px;
+
+}
+.icon{
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+.form{
+    margin-top: 20px;
+    width: 250px;
+    margin-left: 65px;
+    height: 430px;
+    background: linear-gradient(to top,rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
+    position: absolute;
+    top: 80px;
+     left: 500px;
+     border-radius: 10px;
+     padding: 25px;
+color: #fff;
+}
+
+.form h2{
+    width: 220px;
+    font-family: sans-serif;
+    text-align: center;
+    color: #ff7200;
+    font-size: 22px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 2px;
+    padding: 8px;
+}
+.form input{
+    width: 240px;
+
+height: 35px;
+background: transparent;
+border-bottom: 1px solid #ff7200;
+border-top: none;
+border-right: none;
+border-left: none;
+color: #fff;
+font-size: 15px;
+letter-spacing: 1px;
+margin-top: 30px;
+font-family: sans-serif;
+
+
+ }
+ .form input:focus{
+    outline: none;
+ }
+ ::placeholder{
+    color: #fff;
+    font-family: Arial;
+ }
+ .btnn{
+    width: 240px;
+    height: 40px;
+    background: #ff7200;
+    border-top: 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.4s ease;
+    margin-top: 23px;
+ }
+ .btnn:hover{
+   background: #fff;
+    color: #ff7200;
+
+background: linear-gradient
+( to right,
+    CornflowrBlue,
+
+);
+ }
+ .btnn a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+ }
+ .form .link{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    padding-top: 20px;
+    text-align: center;
+
+}
+.form .link a{
+    text-decoration: none;
+    color: #ff7200;
+
+}
+.liw{
+    padding-top: 15px;
+     padding-bottom: 10px;
+     text-align: center;
+     font-size: 19px;
+}
+.icon a{
+    text-decoration: none;
+    color: #fff;
+}
+.icon ion-icon{
+    color: #fff;
+    font-size: 22px;
+    padding-left: 14px;
+    padding-top: 5px;
+    transition: 0.3s ease;
+}
+
+.icon ion-icon:hover{
+    color: #ff7200;
+}
+
+.f4{
+    background-color: #0f1111;
+    color: #fff;
+    height: 80px;
+    font-size: 0.8rem;
+   text-align: center;
+   margin-top: 450px;
+}
+.pages{
+     padding-top: 25px;
+    
+}
+.pages a{
+    text-decoration: none;
+    color: #fff;
+
+}
+.copy{
+    padding-top: 10px;
+}
+.icon{
+    margin-left: 10px;
+}

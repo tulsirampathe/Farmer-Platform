@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Product</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="max-w-lg mx-auto mt-10 p-6 bg-white rounded-lg shadow-md">
+    <h1 class="text-3xl font-semibold text-center mb-6">Add Product</h1>
+    <form id="addProductForm" method="POST" enctype="multipart/form-data">
+      <div class="mb-4">
+        <label for="name" class="block text-sm font-medium text-gray-700">Product Name</label>
+        <input type="text" id="name" name="name" required class="w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
+      </div>
+      <div class="mb-4">
+        <label for="description" class="block text-sm font-medium text-gray-700">Description</label>
+        <textarea id="description" name="description" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"></textarea>
+      </div>
+      <div class="mb-4">
+        <label for="quantity" class="block text-sm font-medium text-gray-700">Quantity</label>
+        <input type="number" id="quantity" name="quantity" required class="w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
+      </div>
+      <div class="mb-4">
+        <label for="pricePerUnit" class="block text-sm font-medium text-gray-700">Price Per Unit</label>
+        <input type="number" id="pricePerUnit" name="pricePerUnit" required class="w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
+      </div>
+      <div class="mb-4">
+        <label for="farmer" class="block text-sm font-medium text-gray-700">Farmer ID</label>
+        <input type="text" id="farmer" name="farmer" required class="w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
+      </div>
+      <div class="mb-4">
+        <label for="image" class="block text-sm font-medium text-gray-700">Product Image</label>
+        <input type="file" id="image" name="image" class="w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
+      </div>
+      <button type="submit" class="w-full py-2 bg-blue-500 text-white font-semibold rounded-md hover:bg-blue-600">Add Product</button>
+    </form>
+  </div>
+
+  <script>
+    document.getElementById('addProductForm').addEventListener('submit', async function(event) {
+      event.preventDefault();
+      const formData = new FormData(this);
+
+      console.log(formData);
+      
+      try {
+        const response = await fetch('http://localhost:5000/api/products', {
+          method: 'POST',
+          body: formData,
+        });
+
+        const result = await response.json();
+
+        if (response.ok) {
+          alert(result.message);
+          this.reset();
+          window.location.href = "location.html";
+        } else {
+          alert(result.error || 'An error occurred');
+        }
+      } catch (err) {
+        console.error(err);
+        alert('An error occurred while adding the product');
+      }
+    });
+  </script>
+</body>
+</html>
